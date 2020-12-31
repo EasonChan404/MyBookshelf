@@ -62,7 +62,6 @@ public class MApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        
         instance = this;
         CrashHandler.getInstance().init(this);
         RxJavaPlugins.setErrorHandler(Functions.emptyConsumer());
